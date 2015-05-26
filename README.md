@@ -37,11 +37,10 @@ var comments = getComments(input, true)
 //       "column": 3
 //     }
 //   },
-//   "value": "/**\n * > Filtering incoming request ...",
+//   "value": "*\n * > Filtering incoming request ...",
 //   "api": true,
 //   "after": "module.exports = function koaIpFilter (options) {"
-// },
-// {
+// }, {
 //   "start": 2187,
 //   "end": 2267,
 //   "type": "Block",
@@ -55,7 +54,7 @@ var comments = getComments(input, true)
 //       "column": 3
 //     }
 //   },
-//   "value": "/**\n * abcd description\n *\n * @name koaIpFilter\n * @param {Object} `options`\n */",
+//   "value": "*\n * abcd description\n *\n * @name koaIpFilter\n * @param {Object} `options`\n ",
 //   "api": false,
 //   "after": "exports.data = function () {\n  return true\n}"
 // } ]
