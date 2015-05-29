@@ -2,7 +2,7 @@
 
 > Extract javascript comments on per character basis. Comment object compatible with `acorn-extract-comments` and Esprima format.
 
-**Notice:** It extracts only first level block comments.
+**Notice:** It extracts only first level block comments, not include nested comments.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -64,6 +64,14 @@ var comments = getComments(input, true)
 //   "after": "exports.data = function () {"
 // } ]
 ```
+
+
+## See also
+- [acorn-extract-comments](https://github.com/tunnckocore/acorn-extract-comments): Extract JavaScript code comments from a string, using `acorn`… [more](https://github.com/tunnckocore/acorn-extract-comments)
+- [acorn-strip-comments](https://github.com/tunnckocore/acorn-strip-comments): Strip code comments from given input string, using acorn javascript… [more](https://github.com/tunnckocore/acorn-strip-comments)
+- [esprima-extract-comments](https://github.com/jonschlinkert/esprima-extract-comments): Extract code comments from string or from a glob of… [more](https://github.com/jonschlinkert/esprima-extract-comments)
+- [js-comments](https://github.com/jonschlinkert/js-comments): Parse JavaScript code comments and generate API documentation.
+- [parse-comments](https://github.com/jonschlinkert/parse-comments): Parse code comments from JavaScript or any language that uses… [more](https://github.com/jonschlinkert/parse-comments)
 
 
 ## Contributing
