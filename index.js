@@ -9,14 +9,22 @@
 
 'use strict'
 
-module.exports = function getComments (input, array) {
+/**
+ * Get block code comments from string
+ *
+ * @param  {String} `<input>` string to extract from
+ * @param  {Boolean} `[resType]` if true, will return array, otherwise object
+ * @return {Array|Object}
+ * @api public
+ */
+module.exports = function getComments (input, resType) {
   if (typeof input !== 'string') {
     throw new TypeError('get-comments expects a string')
   }
 
   var len = input.length
   var obj = {start: 0, end: 0}
-  var res = array ? [] : {}
+  var res = resType ? [] : {}
   var raw = ''
   var column = 0
   var line = 1
@@ -56,7 +64,7 @@ module.exports = function getComments (input, array) {
       if (!lines[line].length) {
         obj.after = lines[line + 1]
       }
-      if (array) {
+      if (resType) {
         res.push(obj)
       } else {
         var l = Object.keys(res).length

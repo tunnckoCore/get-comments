@@ -17,6 +17,11 @@ npm test
 ## Usage
 > For more use-cases see the [tests](./test.js)
 
+- `<input>` **{String}** string to extract from
+- `[resType]` **{Boolean}** if true, will return array, otherwise object
+- `return` **{Array|Object}**
+
+**Example**
 ```js
 var getComments = require('get-comments');
 
@@ -56,7 +61,7 @@ var comments = getComments(input, true)
 //   },
 //   "value": "*\n * abcd description\n *\n * @name koaIpFilter\n * @param {Object} `options`\n ",
 //   "api": false,
-//   "after": "exports.data = function () {\n  return true\n}"
+//   "after": "exports.data = function () {"
 // } ]
 ```
 
