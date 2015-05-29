@@ -20,6 +20,7 @@ test('get-comments:', function () {
 
     test.equal(typeof actual, 'object')
     test.equal(Object.keys(actual).length, 2)
+    test.ok(actual[0].after)
     test.ok(actual[0].after.indexOf('module.exports = function koaIpFilter') !== -1)
     done()
   })
@@ -29,6 +30,7 @@ test('get-comments:', function () {
 
     test.equal(Array.isArray(actual), true)
     test.equal(actual.length, 2)
+    test.ok(actual[1].after)
     test.ok(actual[1].after.indexOf('exports.data =') !== -1)
     done()
   })

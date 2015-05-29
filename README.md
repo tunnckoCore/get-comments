@@ -89,7 +89,7 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [coveralls-img]: https://img.shields.io/coveralls/tunnckoCore/get-comments.svg
 
 [david-url]: https://david-dm.org/tunnckoCore/get-comments
-[david-img]: https://img.shields.io/david/tunnckoCore/get-comments.svg
+[david-img]: https://img.shields.io/david/dev/tunnckoCore/get-comments.svg
 
 [standard-url]: https://github.com/feross/standard
 [standard-img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
