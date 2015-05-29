@@ -14,6 +14,15 @@ var test = require('assertit')
 var getComments = require('./index')
 
 test('get-comments:', function () {
+  test('should throw TypeError if not string given', function (done) {
+    function fixture () {
+      getComments()
+    }
+
+    test.throws(fixture, TypeError)
+    test.throws(fixture, /get-comments expects a string/)
+    done()
+  })
   test('should extract comments as object when getComments(input)', function (done) {
     var input = fs.readFileSync('./fixture.js', 'utf8')
     var actual = getComments(input)
